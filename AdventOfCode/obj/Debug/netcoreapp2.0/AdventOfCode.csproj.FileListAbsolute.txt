@@ -1,0 +1,17 @@
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\AdventOfCode.deps.json
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\AdventOfCode.runtimeconfig.json
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\AdventOfCode.runtimeconfig.dev.json
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\AdventOfCode.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.csprojResolveAssemblyReference.cache
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.csproj.CoreCompileInputs.cache
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.AssemblyInfoInputs.cache
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.AssemblyInfo.cs
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\AdventOfCode.pdb
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\obj\Debug\netcoreapp2.0\AdventOfCode.pdb
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+c:\development\Projects\AdventOfCode\AdventOfCode\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
