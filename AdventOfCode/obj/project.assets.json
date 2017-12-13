@@ -7634,11 +7634,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\development\\Projects\\AdventOfCode\\AdventOfCode\\AdventOfCode.csproj",
+      "projectUniqueName": "C:\\Development\\adventofcode\\AdventOfCode\\AdventOfCode.csproj",
       "projectName": "AdventOfCode",
-      "projectPath": "c:\\development\\Projects\\AdventOfCode\\AdventOfCode\\AdventOfCode.csproj",
+      "projectPath": "C:\\Development\\adventofcode\\AdventOfCode\\AdventOfCode.csproj",
       "packagesPath": "C:\\Users\\jonathan.bock\\.nuget\\packages\\",
-      "outputPath": "c:\\development\\Projects\\AdventOfCode\\AdventOfCode\\obj\\",
+      "outputPath": "C:\\Development\\adventofcode\\AdventOfCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
