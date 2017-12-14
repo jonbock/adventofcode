@@ -1,6 +1,7 @@
 ﻿namespace AdventOfCode.Two
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using FluentAssertions;
     using Xunit;
@@ -47,21 +48,86 @@
                             114	605	94	136	96	167	553	395	164	159	284	104	530	551	544	18";
         }
 
+        public int ProcessCheckSum(string input)
+        {
+            var initialSplitOnRow = input.Split("\r\n", StringSplitOptions.RemoveEmptyEntries);
+            var totalSum = new List<int>();
+            foreach (var row in initialSplitOnRow)
+            {
+                //var listChecksums = row.Replace("\t", " ").Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                List<int> CalculatedChecksumItems = new List<int>();
+
+                CalculatedChecksumItems.Add(CalculateCheckSum(row));
+
+
+                totalSum.Add(CalculatedChecksumItems.Sum());
+            }
+            return totalSum.Sum();
+        }
+
         public int CalculateCheckSum(string input)
         {
-            var blockListString = input.ToCharArray().ToList();
-            var blockListInt = blockListString.Select(int.Parse).ToList();
+            if (!string.IsNullOrEmpty(input))
+            {
+                var blockListString = input.Split("\t").ToList(); //input.ToCharArray().Select(c => c.ToString()).ToList();
+                var blockListInt = blockListString.Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList().ConvertAll(int.Parse);
+                blockListInt.Sort();
+
+                var firstNumber = blockListInt.FirstOrDefault();
+                var lastNumber = blockListInt.LastOrDefault();
+
+                return lastNumber - firstNumber;
+            }
             return 0;
         }
 
         [Fact]
         public void ExampleCode_5195_GivesEight()
         {
-            var input = "5195";
+            var input = "5\t1\t9\t5";
 
             var result = CalculateCheckSum(input);
 
             result.Should().Be(8);
+        }
+
+        [Fact]
+        public void ExampleCode_753_GivesFour()
+        {
+            var input = "7\t5\t3";
+
+            var result = CalculateCheckSum(input);
+
+            result.Should().Be(4);
+        }
+
+        [Fact]
+        public void ExampleCode_2468_GivesFour()
+        {
+            var input = "2\t4\t6\t8";
+
+            var result = CalculateCheckSum(input);
+
+            result.Should().Be(6);
+        }
+
+        [Fact]
+        public void ExampleCode_5195_753_2468_GivesEighteen()
+        {
+            var input = "5\t1\t9\t5\r\n7\t5\t3\r\n2\t4\t6\t8";
+
+            var result = ProcessCheckSum(input);
+
+            result.Should().Be(18);
+        }
+
+        [Fact]
+        public void CalculateSolution_GivesAnswer()
+        {
+
+            var result = ProcessCheckSum(_exerciseInput);
+
+            result.Should().Be(42378);
         }
     }
 }
